@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Chat</title>
+    <link rel="stylesheet" href="/CSS/main.css">
+</head>
+<body>
+    <div id="head">
+        <h1>Chatroom : <span id='roomName'></span></h1>
+    </div>
+    <div>
+        <h3>Other Rooms</h3>
+        <div id='allUsers'>
+
+        </div>
+    </div>
+    <div id="content">
+        
+    </div>
+    <div id="query">
+        <form>
+            <input type="text" placeholder="Your Message here">
+            <button>Send</button>
+        </form>
+    </div>
+
+    <!-- To fetch username and room from query string, used qs library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous">
+    </script>
+    
+    <!-- to load socket.io - client  -->
+    <!-- this will give access to front end library and we can use io object with our js files -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src = "/JS/chat1.js"></script>
+</body>
+</html>
